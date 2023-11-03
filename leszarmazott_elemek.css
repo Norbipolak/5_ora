@@ -1,0 +1,39 @@
+.osszes-leszarmazott li {
+    border: 1px solid black;
+    background-color: red;
+}
+
+.kozvetlen-leszarmazott>li {
+    border: 1px solid black;
+    background-color: red;
+}
+
+.kozvetlen-testver+li {
+    background-color: lightblue;
+    /*kijelöli a következő testvérelemet*/
+}
+
+.osszes-testver~li {
+    background-color: lightgreen;
+}
+
+p::first-letter {
+    display: block;
+    float: left;
+    /*margin-top: 25px;*/
+    font-size: 25px;
+    color: red;
+}
+
+p::first-line {
+    color: green;
+}
+
+.before::before {
+    content: "Ezt a szöveget adtam hozzá";
+    content: url(https://mario.nintendo.com/static/f350c31adcd6378b913f7660db299714/7e15c/mario.png);
+}
+.after::after {
+    content: url(https://mario.nintendo.com/static/f350c31adcd6378b913f7660db299714/7e15c/mario.png);
+}
+  
